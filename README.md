@@ -110,7 +110,7 @@
 * `activity_main.xml`でデザインを作成し、`MainActivity.kt`にロジックを書いています
 
 #### 自動ログイン処理
-```java
+```kotlin
 // UUIDを取得します
 uuid = Secure.getString(applicationContext.contentResolver,
         Secure.ANDROID_ID)

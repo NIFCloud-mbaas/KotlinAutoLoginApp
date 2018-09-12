@@ -2,11 +2,11 @@
 ![画像1](readme-img/001.png)
 
 ## 概要
-* [ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)の『会員管理機能』を利用して、ゲームアプリによく見られる「自動ログイン機能」を実装したサンプルプロジェクトです
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)の『会員管理機能』を利用して、ゲームアプリによく見られる「自動ログイン機能」を実装したサンプルプロジェクトです
  * 「自動ログイン機能」とは、ユーザーが会員登録やログイン/ログアウトを意識することなく会員管理を行う機能です。通常の「会員管理機能」を応用して実装することが可能です。
-* 簡単な操作ですぐに [ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
+* 簡単な操作ですぐに [ニフクラmobile backend](https://mbaas.nifcloud.com/)の機能を体験いただけます★☆
 
-## ニフティクラウドmobile backendって何？？
+## ニフクラmobile backendって何？？
 スマートフォンアプリのバックエンド機能（プッシュ通知・データストア・会員管理・ファイルストア・SNS連携・位置情報検索・スクリプト）が**開発不要**、しかも基本**無料**(注1)で使えるクラウドサービス！
 
 注1：詳しくは[こちら](https://mbaas.nifcloud.com/price.htm)をご覧ください
@@ -15,19 +15,19 @@
 
 ## 動作環境
 
-* Android Studio ver. 2.1.2
+* Android Studio ver. 3.1
 * Android OS ver. 6.0, OS ver. 4.4.2
 
 ※上記内容で動作確認をしています。
 
 ## 手順
-### 1. [ ニフティクラウドmobile backend ](https://mbaas.nifcloud.com/)の会員登録・ログインとアプリの新規作成
+### 1. [ ニフクラmobile backend ](https://mbaas.nifcloud.com/)の会員登録・ログインとアプリの新規作成
 * 上記リンクから会員登録（無料）をします。登録ができたらログインをすると下図のように「アプリの新規作成」画面が出るのでアプリを作成します
 
 ![画像3](readme-img/003.png)
 
 * アプリ作成されると下図のような画面になります
-* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)を紐付けるために使用します
+* この２種類のAPIキー（アプリケーションキーとクライアントキー）はXcodeで作成するiOSアプリに[ニフクラmobile backend](https://mbaas.nifcloud.com/)を紐付けるために使用します
 
 ![画像4](readme-img/004.png)
 
@@ -47,7 +47,7 @@
 
 ### 4. APIキーの設定
 * `MainActivity.kt`を編集します
-* 先程[ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)のダッシュボード上で確認したAPIキーを貼り付けます
+* 先程[ニフクラmobile backend](https://mbaas.nifcloud.com/)のダッシュボード上で確認したAPIキーを貼り付けます
 
  ![画像7](readme-img/007.png)
 
@@ -71,12 +71,12 @@
 ![画像10](readme-img/first_login.png)
 
 ##### クラウド側
-* [ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)のダッシュボードを確認してみましょう
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)のダッシュボードを確認してみましょう
 * 「会員管理」の中にユーザー登録がされていることが確認できます
 
 ![画像11](readme-img/011.png)
 
-* [ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)の「ユーザー名/パスワード」を使用して会員管理を行う機能を「自動ログイン機能」へ応用しています
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)の「ユーザー名/パスワード」を使用して会員管理を行う機能を「自動ログイン機能」へ応用しています
  * ここでは、ユーザー名とパスワードとして、「端末ID（UDID）」を取得し起動時に認証を行うことで自動ログインを実現しています。
  * ダッシュボードの「userName」フィールドで登録された端末IDが確認できます。
 
@@ -91,7 +91,7 @@
 
 ![画像12](readme-img/second_login.png)
 
-* [ニフティクラウドmobile backend](https://mbaas.nifcloud.com/)の会員機能では会員毎に、会員登録やログインを行うたびに更新される「lastLoginDate」というフィールドを持ち、最終ログイン日時を表示します。
+* [ニフクラmobile backend](https://mbaas.nifcloud.com/)の会員機能では会員毎に、会員登録やログインを行うたびに更新される「lastLoginDate」というフィールドを持ち、最終ログイン日時を表示します。
 
 ![画像13](readme-img/013.png)
 
@@ -102,7 +102,7 @@
 
 ### SDKのインポートと初期設定
 
-ニフティクラウドmobile backend のドキュメント（クイックスタート）をご用意していますので、ご活用ください
+ニフクラmobile backend のドキュメント（クイックスタート）をご用意していますので、ご活用ください
 * [Androidのクイックスタート](https://mbaas.nifcloud.com/doc/current/introduction/quickstart_android.html#/Android/)
 
 

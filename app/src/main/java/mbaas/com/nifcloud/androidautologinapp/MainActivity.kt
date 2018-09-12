@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         //**************** APIキーの設定 **************
-        NCMB.initialize(applicationContext, "YOUR_APPLICATION_KEY", "YOUR_CLIENT_KEY")
+        NCMB.initialize(this, "YOUR_APPLICATION_KEY", "YOUR_CLIENT_KEY")
 
         // UUIDを取得します
         uuid = Secure.getString(applicationContext.contentResolver,

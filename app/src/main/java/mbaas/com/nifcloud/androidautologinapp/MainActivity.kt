@@ -2,7 +2,7 @@ package mbaas.com.nifcloud.androidautologinapp
 
 import android.os.Bundle
 import android.provider.Settings.Secure
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.util.Log
 import android.widget.TextView
 import com.nifcloud.mbaas.core.NCMB
